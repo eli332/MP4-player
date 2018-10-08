@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+<input type="text" id="userName"><br>
+<input type="button" value="设置数据" id="setData">
+<input type="button" value="获取数据" id="getData">
+<input type="button" value="删除数据" id="removeData">
+<script>
+    document.querySelector("#setData").onclick=function(){
+        var name=document.querySelector("#userName").value;
+        window.sessionStorage.setItem("userName",name);
+    }
+</script>
+</body>
+</html>
